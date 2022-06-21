@@ -83,6 +83,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
 img:not(.nav-logo) {
@@ -119,7 +120,7 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-7);
 }
 
 @media screen and (min-width: 800px) {
@@ -181,8 +182,9 @@ p {
 
 .section-center {
   width: 90vw;
+  height: 100%;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 6rem 0 4rem 0;
   max-width: 1170px;
 }
 
@@ -192,6 +194,40 @@ p {
   }
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title h2 {
+  background-color: var(--clr-primary-7);
+  color: var(--black);
+  margin: 0 auto 0 0;
+  border-radius: var(--radius);
+  padding: 0.2rem 0.3rem;
+  font-size: 0.8rem;
+}
+
+.title h1 {
+  color: var(--clr-primary-10);
+  padding-top: 0;
+  font-size: 2rem;
+}
+
+.title p {
+  color: var(--clr-primary-10);
+  font-size: 1rem;
+}
+
+.title .btn {
+  margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
 /* added during recording */
 
 /*
@@ -212,7 +248,7 @@ Navbar
   background-image: linear-gradient(
     to top,
     rgba(255, 0, 0, 0),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.9)
   );
   display: grid;
   height: 100px;
@@ -240,7 +276,8 @@ Navbar
 }
 
 .nav-logo {
-  width: 200px;
+  height: 35px;
+  padding-left: 1rem;
 }
 
 .nav-btn {
@@ -288,7 +325,9 @@ Navbar
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
   }
-
+  .nav-logo {
+    height: 45px;
+  }
   .nav-links-btn {
     padding: 20% 0;
   }
@@ -479,34 +518,6 @@ About
   margin: 5rem auto;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-}
-
-.title h2 {
-  background-color: var(--clr-primary-7);
-  color: var(--black);
-  margin: 0 auto 0 0;
-  border-radius: var(--radius);
-  padding: 0.3rem 0.5rem;
-  font-size: 1rem;
-}
-
-.title h1 {
-  color: var(--clr-primary-10);
-  padding-top: 0;
-}
-
-.title p {
-  color: var(--clr-primary-10);
-  font-size: 1.2rem;
-}
-
-.title .btn {
-  margin-right: auto;
-}
-
 @media screen and (min-width: 880px) {
   .about {
     display: grid;
@@ -570,15 +581,144 @@ speedtest
 
 /*
 =============== 
-Timeline
+plano
 ===============
 */
 
+.plans {
+  height: auto;
+}
+.plan-item {
+  background-color: var(--clr-white);
+  color: var(--clr-grey-1);
+  text-align: center;
+  border-radius: var(--radius);
+  border: 3px solid #ddd;
+  padding: 2rem 1rem;
+  margin: 0 1rem 2rem;
+}
+.plans-content {
+  grid-template-columns: minmax(100px, 1fr);
+}
+.plan-header h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--clr-primary-4);
+  position: relative;
+  height: 30px;
+}
+.plan-header p {
+  color: var(--clr-grey-1);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 40px;
+}
+.plan-header p:last-child {
+  color: var(--clr-primary-4);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.plan-text {
+  max-width: 70vw;
+  margin: 1.5rem auto 0;
+}
+.plan-text p {
+  text-align: left;
+  color: var(--clr-grey-1);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.plan-text span {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.plan-text i {
+  color: var(--clr-primary-4);
+  margin-right: 0.2rem;
+}
+.plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.plan-price p {
+  color: var(--clr-grey-1);
+}
+.plan-price-rs {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.plan-price-value {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.plan-price-cents {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.plan-footer .plan-footer-btn {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .plans-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem 1rem;
+  }
+}
 /*
 =============== 
-Blog
+assinante
 ===============
 */
+.assinante {
+  height: auto;
+}
+.title-assinante {
+  padding: 2rem 0;
+}
+.assinante-item {
+  padding: 2rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.assinante-item i {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0.5rem;
+}
+.assinante-item h3 {
+  color: var(--clr-primary-5);
+  font-size: 1.4rem;
+}
+
+.assinante-item:hover {
+  transition: var(--transition);
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 600px) {
+  .assinante {
+    height: 90vh;
+  }
+  .assinante-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 0;
+    gap: 20px;
+  }
+}
 
 /*
 =============== 
