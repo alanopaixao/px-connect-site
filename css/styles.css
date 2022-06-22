@@ -123,6 +123,10 @@ p {
   color: var(--clr-grey-7);
 }
 
+section {
+  height: auto;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -317,7 +321,7 @@ Navbar
     align-items: center;
     width: 95vw;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1500px;
   }
 
   .nav-links {
@@ -430,7 +434,7 @@ header
 ===============
 */
 .header {
-  background: url(../images/header/img03.jpg) no-repeat center fixed;
+  background: url(../images/header/img02.jpg) no-repeat center fixed;
   background-size: cover;
   height: 110vh;
   display: grid;
@@ -549,9 +553,7 @@ Plans
 assinante
 ===============
 */
-.assinante {
-  height: 100vh;
-}
+
 /*
 =============== 
 speedtest
@@ -672,7 +674,7 @@ plano
 @media screen and (min-width: 600px) {
   .plans-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 3rem 1rem;
   }
 }
@@ -709,9 +711,6 @@ assinante
 }
 
 @media screen and (min-width: 600px) {
-  .assinante {
-    height: 90vh;
-  }
   .assinante-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -725,6 +724,10 @@ assinante
 Footer
 ===============
 */
+.footer {
+  height: auto;
+  background-color: var(--black);
+}
 /*
 =============== 
 Single Page
