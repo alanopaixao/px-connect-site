@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/normalize.csss" />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Swipe JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -86,8 +91,10 @@
     <!-- end of sidebar -->
     <!-- header -->
     <header class="header">
+      <video autoplay muted loop class="video-container">
+        <source src="images/background-header.mp4" type="video/mp4" />
+      </video>
       <div class="section-center">
-        <div class="header-box-transparent"></div>
         <div class="header-box">
           <div class="header-box-text">
             <h1>conexão que aproxima as pessoas</h1>
@@ -103,23 +110,63 @@
     </header>
     <!-- end of header -->
     <!-- about -->
-    <section class="about section-center">
-      <div class="title">
-        <h2>sobre a PX Connect Fibra</h2>
-        <h1>PX Connect Fibra</h1>
-        <p>
-          Utilizamos as melhores tecnologias do mercado para proporcionar uma
-          excelente experiência para nossos clientes. Nossa equipe de suporte
-          técnico é constantemente treinada para oferecermos qualidade na
-          entrega de internet para nossos clientes.
-        </p>
-        <button class="btn">saiba mais</button>
-      </div>
-      <div class="about-box">
-        <div class="about-box-img"></div>
+    <section class="about">
+      <div class="section-center">
+        <div class="title">
+          <h2>sobre nós</h2>
+          <h1>nós somos a PX CONNECT!</h1>
+          <p>
+            Utilizamos o que há de mais moderno em equipamentos e tecnologia
+            disponíveis para levar até você a melhor internet e transmissão de
+            dados do mercado. Contamos com profissionais capacitados para
+            operar, incorporar e buscar novas tendências tecnológicas.
+          </p>
+        </div>
+        <div class="about-box">
+          <!-- box item -->
+          <div class="about-box-item">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>fibra óptica</h3>
+            <p>
+              Desfrute do nosso Download e Upload em suas navegações, com
+              estabilidade e disponibilidade 24x7
+            </p>
+          </div>
+          <!-- end of box item -->
+          <!-- box item -->
+          <div class="about-box-item">
+            <i class="fa-solid fa-users"></i>
+            <h3>Atendimento</h3>
+            <p>
+              Rede 100% fibra óptica de verdade! Entregamos a melhor conexão até
+              a sua casa, sem enrolação.
+            </p>
+          </div>
+          <!-- end of box item -->
+          <!-- box item -->
+          <div class="about-box-item">
+            <i class="fa-solid fa-server"></i>
+            <h3>servidores</h3>
+            <p>
+              Nossa tecnologia garante estabilidade e menor latência ao navegar
+              pela internet. Fique a vontade!
+            </p>
+          </div>
+          <!-- end of box item -->
+          <!-- box item -->
+          <div class="about-box-item">
+            <i class="fa-solid fa-check-to-slot"></i>
+            <h3>rede homologada</h3>
+            <p>
+              Nossa tecnologia garante estabilidade e menor latência ao navegar
+              pela internet. Fique a vontade!
+            </p>
+          </div>
+          <!-- end of box item -->
+        </div>
       </div>
     </section>
-    <!-- end of about -->
+    <!-- end about -->
     <!-- plans -->
     <section class="plans">
       <div class="section-center">
@@ -131,11 +178,11 @@
             procura entre em contato com nossa central pelo 0800 799 8596
           </p>
         </div>
-        <div class="plans-content" id="plans-content">
+        <div class="plans-box" id="plans-content">
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400 mega</h3>
+              <h3>400<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
@@ -150,11 +197,11 @@
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
-                <span>wi-fi dual band</span> em comodato
+                wi-fi <span>turbo</span>
               </p>
               <p>
-                <i class="fa-regular fa-face-smile-beam"></i> atendimento
-                <span>humanizado</span>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
               </p>
             </div>
             <div class="plan-price">
@@ -175,7 +222,7 @@
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400 mega</h3>
+              <h3>400<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
@@ -190,11 +237,11 @@
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
-                <span>wi-fi dual band</span> em comodato
+                wi-fi <span>turbo</span>
               </p>
               <p>
-                <i class="fa-regular fa-face-smile-beam"></i> atendimento
-                <span>humanizado</span>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
               </p>
             </div>
             <div class="plan-price">
@@ -215,7 +262,7 @@
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400 mega</h3>
+              <h3>400<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
@@ -230,11 +277,11 @@
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
-                <span>wi-fi dual band</span> em comodato
+                wi-fi <span>turbo</span>
               </p>
               <p>
-                <i class="fa-regular fa-face-smile-beam"></i> atendimento
-                <span>humanizado</span>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
               </p>
             </div>
             <div class="plan-price">
@@ -255,7 +302,7 @@
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400 mega</h3>
+              <h3>400<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
@@ -270,11 +317,51 @@
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
-                <span>wi-fi dual band</span> em comodato
+                wi-fi <span>turbo</span>
               </p>
               <p>
-                <i class="fa-regular fa-face-smile-beam"></i> atendimento
-                <span>humanizado</span>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
+              </p>
+            </div>
+            <div class="plan-price">
+              <p class="plan-price-rs">R$</p>
+              <p class="plan-price-value">99</p>
+              <div class="plan-price-cents">
+                <p>,90</p>
+                <p>/mês</p>
+              </div>
+            </div>
+            <div class="plan-footer">
+              <button class="btn plan-footer-btn">
+                <i class="fa-solid fa-rocket"></i> contratar agora
+              </button>
+            </div>
+          </div>
+          <!-- end to plan item -->
+          <!-- plan item -->
+          <div class="plan-item">
+            <div class="plan-header">
+              <h3>400<span>mb</span></h3>
+              <p>internet fibra</p>
+              <p>velocidade turbo</p>
+            </div>
+            <div class="plan-text">
+              <p>
+                <i class="fa-solid fa-cloud-arrow-down"></i> download de
+                <span>400 mega</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-rocket"></i> upload de
+                <span>200 mega</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-wifi"></i>
+                wi-fi <span>turbo</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
               </p>
             </div>
             <div class="plan-price">
@@ -293,6 +380,7 @@
           </div>
           <!-- end to plan item -->
         </div>
+        <p class="plan-obs">* Sujeito a viabilidade técnica.</p>
       </div>
     </section>
     <!-- end of plans -->
