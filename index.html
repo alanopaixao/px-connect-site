@@ -26,7 +26,9 @@
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-          <img src="images/logo.svg" alt="" class="nav-logo" />
+          <a href="#">
+            <img src="images/logo.svg" alt="" class="nav-logo" />
+          </a>
           <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
           </button>
@@ -34,9 +36,9 @@
         <!-- nav links -->
         <ul class="nav-links">
           <li><a href="#" class="nav-links-btn">início</a></li>
-          <li><a href="#" class="nav-links-btn">planos</a></li>
-          <li><a href="#" class="nav-links-btn">contato</a></li>
-          <li><a href="#" class="nav-links-btn">Speed Test</a></li>
+          <li><a href="#about" class="nav-links-btn">sobre nós</a></li>
+          <li><a href="#plans" class="nav-links-btn">planos</a></li>
+          <li><a href="#speedtest" class="nav-links-btn">Speed Test</a></li>
           <li>
             <a
               href="https://pxconnect.sgp.net.br/central"
@@ -55,16 +57,18 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <ul class="sidebar-nav-links">
-        <li><a href="#">início</a></li>
-        <li><a href="#">planos</a></li>
-        <li><a href="#">fale conosco</a></li>
-        <li>
-          <a
-            href="https://pxconnect.sgp.net.br/central"
-            class=""
-            target="_blank"
-            >assinante</a
-          >
+          <li><a href="#" class="nav-links-btn">início</a></li>
+          <li><a href="#about" class="nav-links-btn">sobre nós</a></li>
+          <li><a href="#plans" class="nav-links-btn">planos</a></li>
+          <li><a href="#speedtest" class="nav-links-btn">Speed Test</a></li>
+          <li>
+            <a
+              href="https://pxconnect.sgp.net.br/central"
+              class="nav-links-btn nav-links-btn-assinante"
+              target="_blank"
+              >Assinante</a
+            >
+          </li>
         </li>
       </ul>
       <ul class="sidebar-icons-links">
@@ -79,10 +83,10 @@
           ></a>
         </li>
         <li>
-          <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20planos%20da%20PX%20Connect!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </li>
         <li>
-          <a href="#" target="_blank"
+          <a href="https://www.google.com.br/maps/place/PX+Connect/@-3.8878281,-38.5378799,15.75z/data=!4m5!3m4!1s0x7c751ef16b64e55:0x687bfa17e068304a!8m2!3d-3.8858298!4d-38.5286697" target="_blank"
             ><i class="fa-solid fa-map-location-dot"></i
           ></a>
         </li>
@@ -110,7 +114,7 @@
     </header>
     <!-- end of header -->
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="section-center">
         <div class="title">
           <h2>sobre nós</h2>
@@ -168,7 +172,7 @@
     </section>
     <!-- end about -->
     <!-- plans -->
-    <section class="plans">
+    <section class="plans" id="plans">
       <div class="section-center">
         <div class="title">
           <h2>outros serviços</h2>
@@ -182,18 +186,18 @@
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400<span>mb</span></h3>
+              <h3>600<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
             <div class="plan-text">
               <p>
                 <i class="fa-solid fa-cloud-arrow-down"></i> download de
-                <span>400 mega</span>
+                <span>600 mega</span>
               </p>
               <p>
                 <i class="fa-solid fa-rocket"></i> upload de
-                <span>200 mega</span>
+                <span>600 mega</span>
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
@@ -206,21 +210,24 @@
             </div>
             <div class="plan-price">
               <p class="plan-price-rs">R$</p>
-              <p class="plan-price-value">99</p>
+              <p class="plan-price-value">129</p>
               <div class="plan-price-cents">
                 <p>,90</p>
                 <p>/mês</p>
               </div>
             </div>
             <div class="plan-footer">
+              <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20de%20600%20megas" target="_blank">
               <button class="btn plan-footer-btn">
                 <i class="fa-solid fa-rocket"></i> contratar agora
               </button>
+              </a>
+
             </div>
           </div>
           <!-- end to plan item -->
           <!-- plan item -->
-          <div class="plan-item">
+          <div class="plan-item best-plan">
             <div class="plan-header">
               <h3>400<span>mb</span></h3>
               <p>internet fibra</p>
@@ -233,7 +240,7 @@
               </p>
               <p>
                 <i class="fa-solid fa-rocket"></i> upload de
-                <span>200 mega</span>
+                <span>400 mega</span>
               </p>
               <p>
                 <i class="fa-solid fa-wifi"></i>
@@ -253,23 +260,67 @@
               </div>
             </div>
             <div class="plan-footer">
+              <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20de%20400%20megas" target="_blank">
               <button class="btn plan-footer-btn">
                 <i class="fa-solid fa-rocket"></i> contratar agora
               </button>
+              </a>
             </div>
           </div>
           <!-- end to plan item -->
           <!-- plan item -->
           <div class="plan-item">
             <div class="plan-header">
-              <h3>400<span>mb</span></h3>
+              <h3>300<span>mb</span></h3>
               <p>internet fibra</p>
               <p>velocidade turbo</p>
             </div>
             <div class="plan-text">
               <p>
                 <i class="fa-solid fa-cloud-arrow-down"></i> download de
-                <span>400 mega</span>
+                <span>300 mega</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-rocket"></i> upload de
+                <span>300 mega</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-wifi"></i>
+                wi-fi <span>turbo</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
+                <span>grátis</span>
+              </p>
+            </div>
+            <div class="plan-price">
+              <p class="plan-price-rs">R$</p>
+              <p class="plan-price-value">89</p>
+              <div class="plan-price-cents">
+                <p>,90</p>
+                <p>/mês</p>
+              </div>
+            </div>
+            <div class="plan-footer">
+              <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20de%20300%20megas" target="_blank">
+              <button class="btn plan-footer-btn">
+                <i class="fa-solid fa-rocket"></i> contratar agora
+              </button>
+              </a>
+            </div>
+          </div>
+          <!-- end to plan item -->
+          <!-- plan item -->
+          <div class="plan-item">
+            <div class="plan-header">
+              <h3>200<span>mb</span></h3>
+              <p>internet fibra</p>
+              <p>velocidade turbo</p>
+            </div>
+            <div class="plan-text">
+              <p>
+                <i class="fa-solid fa-cloud-arrow-down"></i> download de
+                <span>200 mega</span>
               </p>
               <p>
                 <i class="fa-solid fa-rocket"></i> upload de
@@ -286,39 +337,38 @@
             </div>
             <div class="plan-price">
               <p class="plan-price-rs">R$</p>
-              <p class="plan-price-value">99</p>
+              <p class="plan-price-value">79</p>
               <div class="plan-price-cents">
                 <p>,90</p>
                 <p>/mês</p>
               </div>
             </div>
             <div class="plan-footer">
+              <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20de%20200%20megas" target="_blank">
               <button class="btn plan-footer-btn">
                 <i class="fa-solid fa-rocket"></i> contratar agora
               </button>
+              </a>
             </div>
           </div>
           <!-- end to plan item -->
           <!-- plan item -->
-          <div class="plan-item">
+          <div class="plan-item plan-item-min">
             <div class="plan-header">
-              <h3>400<span>mb</span></h3>
+              <h3>80<span>mb</span></h3>
               <p>internet fibra</p>
-              <p>velocidade turbo</p>
+              <p>velocidade rápida</p>
             </div>
             <div class="plan-text">
               <p>
                 <i class="fa-solid fa-cloud-arrow-down"></i> download de
-                <span>400 mega</span>
+                <span>80 mega</span>
               </p>
               <p>
                 <i class="fa-solid fa-rocket"></i> upload de
-                <span>200 mega</span>
+                <span>80 mega</span>
               </p>
-              <p>
-                <i class="fa-solid fa-wifi"></i>
-                wi-fi <span>turbo</span>
-              </p>
+
               <p>
                 <i class="fa-solid fa-screwdriver-wrench"></i> instalação
                 <span>grátis</span>
@@ -326,56 +376,18 @@
             </div>
             <div class="plan-price">
               <p class="plan-price-rs">R$</p>
-              <p class="plan-price-value">99</p>
+              <p class="plan-price-value">69</p>
               <div class="plan-price-cents">
                 <p>,90</p>
                 <p>/mês</p>
               </div>
             </div>
             <div class="plan-footer">
+              <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20de%2080%20megas" target="_blank">
               <button class="btn plan-footer-btn">
                 <i class="fa-solid fa-rocket"></i> contratar agora
               </button>
-            </div>
-          </div>
-          <!-- end to plan item -->
-          <!-- plan item -->
-          <div class="plan-item">
-            <div class="plan-header">
-              <h3>400<span>mb</span></h3>
-              <p>internet fibra</p>
-              <p>velocidade turbo</p>
-            </div>
-            <div class="plan-text">
-              <p>
-                <i class="fa-solid fa-cloud-arrow-down"></i> download de
-                <span>400 mega</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-rocket"></i> upload de
-                <span>200 mega</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-wifi"></i>
-                wi-fi <span>turbo</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-screwdriver-wrench"></i> instalação
-                <span>grátis</span>
-              </p>
-            </div>
-            <div class="plan-price">
-              <p class="plan-price-rs">R$</p>
-              <p class="plan-price-value">99</p>
-              <div class="plan-price-cents">
-                <p>,90</p>
-                <p>/mês</p>
-              </div>
-            </div>
-            <div class="plan-footer">
-              <button class="btn plan-footer-btn">
-                <i class="fa-solid fa-rocket"></i> contratar agora
-              </button>
+              </a>
             </div>
           </div>
           <!-- end to plan item -->
@@ -424,18 +436,20 @@
           </a>
           <!-- end of assinatura item -->
           <!-- assinatura item -->
-          <div class="assinante-item">
-            <i class="fa-solid fa-headset"></i>
-            <h3>suporte</h3>
-            <p>Entre em contato com nosso suporte para tirar dúvidas.</p>
-          </div>
+          <a href="https://api.whatsapp.com/send?phone=5585981096361&text=Ol%C3%A1%2C%20iniciar%20um%20atendimento." target="_blank">
+            <div class="assinante-item">
+              <i class="fa-solid fa-headset"></i>
+              <h3>suporte</h3>
+              <p>Entre em contato com nosso suporte para tirar dúvidas.</p>
+            </div>
+          </a>
           <!-- end of assinatura item -->
         </div>
       </div>
     </section>
     <!-- end of assinante -->
     <!-- speedtest -->
-    <section class="speedtest">
+    <section class="speedtest" id="speedtest">
       <div class="section-center">
         <div class="speedtest-text">
           <h1>ultra velocidade e estabilidade</h1>
@@ -460,7 +474,10 @@
       <div class="footer-section-center section-center">
         <div class="footer-info">
           <div class="footer-info-logo">
-            <img src="images/logo.svg" alt="" />
+            <a href="#">
+
+              <img src="images/logo.svg" alt="" />
+            </a>
           </div>
           <div class="footer-info-text">
             <a

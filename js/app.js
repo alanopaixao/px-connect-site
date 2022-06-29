@@ -34,5 +34,8 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
+sidebar.addEventListener("click", function () {
+  sidebar.classList.remove("show-sidebar");
+});
 
 date.innerHTML = new Date().getFullYear();
