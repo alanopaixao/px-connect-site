@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PX Connect Fibra</title>
     <!-- font-awesome -->
-    <!-- <link
-      rel="stylesheet"
-      href="./fontawesome-free-5.12.1-web/css/all.min.css"
-    /> -->
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css" />
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.csss" />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Swipe JS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <!-- navbar -->
@@ -26,7 +17,7 @@
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-          <a href="#">
+          <a href="#header">
             <img src="images/logo.svg" alt="" class="nav-logo" />
           </a>
           <button class="nav-btn" id="nav-btn">
@@ -35,7 +26,7 @@
         </div>
         <!-- nav links -->
         <ul class="nav-links">
-          <li><a href="#" class="nav-links-btn">início</a></li>
+          <li><a href="#header" class="nav-links-btn">início</a></li>
           <li><a href="#about" class="nav-links-btn">sobre nós</a></li>
           <li><a href="#plans" class="nav-links-btn">planos</a></li>
           <li><a href="#speedtest" class="nav-links-btn">Speed Test</a></li>
@@ -57,7 +48,7 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <ul class="sidebar-nav-links">
-          <li><a href="#" class="nav-links-btn">início</a></li>
+          <li><a href="#header" class="nav-links-btn">início</a></li>
           <li><a href="#about" class="nav-links-btn">sobre nós</a></li>
           <li><a href="#plans" class="nav-links-btn">planos</a></li>
           <li><a href="#speedtest" class="nav-links-btn">Speed Test</a></li>
@@ -91,17 +82,18 @@
           ></a>
         </li>
       </ul>
+
     </div>
     <!-- end of sidebar -->
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <video autoplay muted loop class="video-container">
         <source src="images/background-header.mp4" type="video/mp4" />
       </video>
       <div class="section-center">
         <div class="header-box">
           <div class="header-box-text">
-            <h1>conexão que aproxima as pessoas</h1>
+            <h1>conexão que aproxima pessoas</h1>
             <h2>internet 100% Fibra óptica</h2>
             <p>
               A PX Connect Fibra é uma empresa moderna e dinâmica especializada
@@ -132,8 +124,7 @@
             <i class="fa-solid fa-rocket"></i>
             <h3>fibra óptica</h3>
             <p>
-              Desfrute do nosso Download e Upload em suas navegações, com
-              estabilidade e disponibilidade 24x7
+              Nossa tecnologia de ponta oferece qualidade e redundância na sua conexão com uma rede 100% Fibra Óptica até sua casa.
             </p>
           </div>
           <!-- end of box item -->
@@ -142,8 +133,7 @@
             <i class="fa-solid fa-users"></i>
             <h3>Atendimento</h3>
             <p>
-              Rede 100% fibra óptica de verdade! Entregamos a melhor conexão até
-              a sua casa, sem enrolação.
+              Contamos com o melhor tempo de atendimento humanizado da região, proporcionando uma melhor qualidade e segurança pra você.
             </p>
           </div>
           <!-- end of box item -->
@@ -152,8 +142,7 @@
             <i class="fa-solid fa-server"></i>
             <h3>servidores</h3>
             <p>
-              Nossa tecnologia garante estabilidade e menor latência ao navegar
-              pela internet. Fique a vontade!
+Nós temos os servidores do Youtube, Netflix, Google e Facebook. Disponibilizamos de uma navegação muito mais rápida e estável.
             </p>
           </div>
           <!-- end of box item -->
@@ -162,8 +151,7 @@
             <i class="fa-solid fa-check-to-slot"></i>
             <h3>rede homologada</h3>
             <p>
-              Nossa tecnologia garante estabilidade e menor latência ao navegar
-              pela internet. Fique a vontade!
+              Os nossos planos são 100% adequados à nova resolução da ANATEL. Você recebe o que pagou de verdade 24x7.
             </p>
           </div>
           <!-- end of box item -->
@@ -175,11 +163,13 @@
     <section class="plans" id="plans">
       <div class="section-center">
         <div class="title">
-          <h2>outros serviços</h2>
-          <h1>Precisa de ajuda?</h1>
+          <h2>nossos planos</h2>
+          <h1>assine já e venha ser px connect</h1>
           <p>
-            Tenha acesso a alguns dos nossos serviços, causo não consiga o que
-            procura entre em contato com nossa central pelo 0800 799 8596
+            Aproveite nossos planos ilimitados sem medo de realizar Download e Upload. 
+          </p>
+          <p>
+            Se preferir, basta entrar em contato através do número <a href="tel:+5585981096361">(85) 98109-6361</a>.
           </p>
         </div>
         <div class="plans-box" id="plans-content">
@@ -403,8 +393,8 @@
           <h2>outros serviços</h2>
           <h1>Precisa de ajuda?</h1>
           <p>
-            Tenha acesso a alguns dos nossos serviços, causo não consiga o que
-            procura entre em contato com nossa central pelo 0800 799 8596
+            Tenha acesso a alguns dos nossos serviços. Caso não encontre o que
+            procura, entre em contato com nosso suporte.
           </p>
         </div>
         <div class="assinante-box">
@@ -416,7 +406,7 @@
             <div class="assinante-item">
               <i class="fa-solid fa-barcode"></i>
               <h3>2º via do boleto</h3>
-              <p>Tenha acesso a 2º via de seu boleto</p>
+              <p>Tenha acesso a 2º via de seu boleto.</p>
             </div>
           </a>
           <!-- end of assinatura item -->
@@ -430,7 +420,7 @@
               <h3>central do assinante</h3>
               <p>
                 Tenha acesso a desbloqueio de confiança, extrato financeiro,
-                faturas e entre outros
+                faturas e entre outros.
               </p>
             </div>
           </a>
@@ -455,7 +445,7 @@
           <h1>ultra velocidade e estabilidade</h1>
           <p>
             Será que a sua internet é ideal para tudo que você precisa? Teste a
-            velocidade da sua internet abaixo
+            velocidade da sua internet abaixo.
           </p>
         </div>
         <div class="speedtest-buttons">
@@ -474,8 +464,7 @@
       <div class="footer-section-center section-center">
         <div class="footer-info">
           <div class="footer-info-logo">
-            <a href="#">
-
+            <a href="#header">
               <img src="images/logo.svg" alt="" />
             </a>
           </div>

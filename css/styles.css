@@ -200,7 +200,7 @@ section {
   color: var(--black);
   margin: 0 auto 0 0;
   border-radius: var(--radius);
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 0.5rem;
   font-size: 0.8rem;
 }
 
@@ -208,6 +208,11 @@ section {
   color: var(--clr-primary-10);
   padding-top: 0;
   font-size: 2rem;
+  padding: 0.5rem 0 1.2rem;
+}
+
+.title a {
+  font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
@@ -434,6 +439,9 @@ header
   object-fit: cover;
   z-index: -2;
 }
+.header-box-text h1 {
+  font-size: 2.5rem;
+}
 
 .header-box-text h2 {
   font-size: 1.2rem;
@@ -441,6 +449,9 @@ header
 }
 
 @media screen and (min-width: 880px) {
+  .header-box-text h1 {
+    font-size: 4rem;
+  }
   .header-box-text h2 {
     font-size: 2.3rem;
   }
@@ -729,7 +740,7 @@ Footer
 }
 .footer-info-logo img {
   height: 50px;
-  filter: grayscale(100%) brightness(300%) contrast(300%);
+  /* filter: grayscale(100%) brightness(300%) contrast(300%); */
 }
 
 .footer-anatel img {
